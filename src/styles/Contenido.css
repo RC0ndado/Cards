@@ -1,0 +1,50 @@
+/* Se define un conjunto de reglas de estilo para el elemento Contenedor
+que lo muestra como un contenedor flex con dirección de columna.
+*/
+.Contenedor {
+display: flex;
+flex-direction: column;
+}
+
+/*Se define un conjunto de reglas de estilo para el elemento Titulo
+que lo muestra con un tamaño de fuente grande, con peso de fuente semibold y
+un margen inferior de 10px.
+*/
+.Titulo {
+font-size: 2rem;
+font-weight: 700;
+margin-bottom: 10px;
+}
+
+/*Se define un conjunto de reglas de estilo para el elemento Parrafo
+que lo muestra con un tamaño de fuente normal y un margen inferior de 20px.
+*/
+.Parrafo {
+font-size: 1rem;
+margin-bottom: 20px;
+}
+
+/*Se define un conjunto de reglas de estilo para el elemento Boton
+que lo muestra como un botón con un color de fondo y un color de texto
+específicos, sin borde, con un cursor y una fuente específicos,
+y una transición de estilo de duración de 0.3 segundos.
+*/
+.Boton {
+display: block;
+padding: 10px 30px;
+border-radius: 100px;
+color: #fff;
+border: none;
+background: #1766DC;
+cursor: pointer;
+font-family: 'Roboto', sans-serif;
+font-weight: 500;
+transition: .3s ease all;
+}
+
+/*Se define un conjunto de reglas de estilo para el elemento Boton:hover
+que lo muestra con un color de fondo diferente al pasar el cursor por encima.
+*/
+.Boton:hover {
+background: #0066FF;
+}

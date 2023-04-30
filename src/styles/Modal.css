@@ -1,0 +1,72 @@
+.overlay {
+  /* Fondo oscuro con transparencia */
+  background: rgba(0, 0, 0, 0.5);
+  /* Cubre toda la pantalla */
+  width: 100vw;
+  height: 100vh;
+  /* Se posiciona fijo para que no se mueva al hacer scroll */
+  position: fixed;
+  top: 0;
+  left: 0;
+  /* Padding para que el contenido no toque los bordes */
+  padding: 40px;
+  /* Centra el contenido verticalmente */
+  display: flex;
+  align-items: center;
+  /* Centra el contenido horizontalmente */
+  justify-content: center;
+}
+
+.modal-container {
+  /* Ancho del contenedor */
+  width: 500px;
+  /* Altura mínima del contenedor */
+  min-height: 100px;
+  /* Fondo del contenedor */
+  background: #fff;
+  /* Posición relativa para que los elementos internos se posicionen relativos a este contenedor */
+  position: relative;
+  /* Bordes redondeados */
+  border-radius: 5px;
+  /* Sombra para dar profundidad al contenedor */
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  /* Padding para separar los elementos del borde */
+  padding: 20px;
+}
+
+.modal-header {
+  /* Flexbox para alinear los elementos */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* Espacio inferior para separar del contenido siguiente */
+  margin-bottom: 20px;
+  padding-bottom: 20px;
+  /* Borde inferior */
+  border-bottom: 1px solid #e8e8e8;
+}
+
+.modal-header h3 {
+  /* Estilos del título del header */
+  font-weight: 500;
+  font-size: 16px;
+  color: #1766dc;
+}
+
+.close-button {
+  /* Posicionamiento del botón */
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  /* Ancho y alto del botón */
+  width: 30px;
+  height: 30px;
+  /* Fondo transparente */
+  background: none;
+  /* Sin borde */
+  border: none;
+  /* Transición para animar al hacer hover */
+  transition: all 0.3s ease;
+  /* Cursor pointer para indicar que es un botón */
+  cursor: pointer;
+}

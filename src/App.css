@@ -1,38 +1,37 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+/* Se define un conjunto de reglas de estilo para el elemento contenedor-botones
+que lo muestra como un contenedor flex con espacio interior (padding) de 40px,
+con envoltura flexible (flex-wrap), centrando los elementos con justify-content,
+espacio entre los elementos con gap y sin especificar la dirección de flexión.
+*/
+.contenedor-botones {
+  padding: 40px;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-wrap: wrap;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  gap: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+/* Se define un conjunto de reglas de estilo para los elementos button
+que los muestra como botones con un padding específico, un radio de borde de 100px,
+un color de texto y de fondo específicos, sin borde, con un cursor y una fuente específicos,
+y una transición de estilo de duración de 0.3 segundos.
+*/
+button {
+  display: block;
+  padding: 10px 30px;
+  border-radius: 100px;
+  color: #fff;
+  border: none;
+  background: #1766dc;
+  cursor: pointer;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 500;
+  transition: 0.3s ease all;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+/* Se define un conjunto de reglas de estilo para los elementos button:hover
+que los muestra con un color de fondo diferente al pasar el cursor por encima.
+*/
+button:hover {
+  background: #0066ff;
 }
